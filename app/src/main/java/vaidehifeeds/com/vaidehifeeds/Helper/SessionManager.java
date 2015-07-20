@@ -1,4 +1,4 @@
-package vaidehifeeds.com.vaidehifeeds.Helper;
+package vaidehifeeds.com.vaidehifeeds.helper;
 
 /**
  * Created by BB3 on 7/20/2015.
