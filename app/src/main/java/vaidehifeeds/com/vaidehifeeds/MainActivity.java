@@ -33,6 +33,15 @@ public class MainActivity extends ActionBarActivity {
                 R.layout.drawer_list_item, mPlanetTitles));
         // Set the list's click listener
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+
+        //Set the Default Fragment to HomeFragment
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.content_frame, new HomeFragment())
+                .commit();
+        mDrawerList.setItemChecked(0, true);
+        setTitle(mPlanetTitles[0]);
+        //End of Set the Default Fragment to HomeFragment
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
@@ -60,9 +69,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
 
-        Bundle args = new Bundle();
-        args.putInt(HomeFragment.ARG_PLANET_NUMBER, position);
-        fragment.setArguments(args);
+        //Bundle args = new Bundle();
+        //args.putInt(HomeFragment.ARG_PLANET_NUMBER, position);
+        //fragment.setArguments(args);
 
         // Insert the fragment by replacing any existing fragment
         FragmentManager fragmentManager = getFragmentManager();
