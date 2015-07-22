@@ -13,4 +13,12 @@
     <string name="welcome">Welcome</string>
     <string name="btn_logout">LOGOUT</string>
     <string name="name">Fullname</string>
+    <!-- Navigation -->
+    <string-array name="planets_array">
+        <item>Home</item>
+        <item>Profile</item>
+    </string-array>
+
+    <string name="about">About</string>
+
 </resources>
